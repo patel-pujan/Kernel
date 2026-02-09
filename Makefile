@@ -15,7 +15,7 @@ ASFLAGS    := -g
 LDFLAGS    := -nostdlib -T linker.ld
 DUMPFLAGS  := -dS
 COPYFLAGS  := -O binary
-QEMUFLAGS  := -machine virt-10.1 -cpu cortex-a57 -nographic
+QEMUFLAGS  := -M raspi4b -nographic
 
 # Files
 SRC_C    := kernel.c

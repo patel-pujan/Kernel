@@ -11,7 +11,7 @@ _start:
   MOV SP, x0            // set SP to stack_top
 
   LDR x1, =_deadbeef    // load address of DEADBEEF into x1
-  LDR x1, [x1]          // load DEADBEEF into x1
+  LDR x2, [x1]          // load DEADBEEF into x1
 
   BL kernel             // branch & link to C kernel
   B .                   // loop continuously
